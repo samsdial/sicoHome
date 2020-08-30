@@ -1,0 +1,73 @@
+.bgi
+	&:before
+		content: ""
+		position: absolute
+		display: inline-block
+		background-position: center center
+		background-size: contain
+		background-repeat: no-repeat
+	&_top:before
+		background-image: url('#{$imagePath}bg-top.png')
+		width: 1200px
+		height: 1200px
+		top: -107px
+		right: -229px
+	&_ondas:before
+		background-position: 0 900px
+		width: 100%
+		height: 2300px
+		bottom: 0
+		right: 0
+		background-image: url('#{$imagePath}ondas.jpeg')
+		@media (max-width: $XL)
+			background-image: url('#{$imagePath}ondas.jpeg')
+			bottom: -260px
+		@media (max-width: 950px)
+			background-image: url('#{$imagePath}ondas.jpeg')
+			bottom: -460px
+		+MQMAX(M)
+			width: 118%
+			height: 4810px
+			right: -3px
+			bottom: -1857px
+			background-image: url('#{$imagePath}movil-ondas.jpeg')
+		+MQMAX(S)
+			width: 104%
+			height: 3024px
+			right: -4px
+			bottom: -160px
+			background-image: url('#{$imagePath}movil-ondas.jpeg')
+
+.bgc
+	&_solid
+		&--yellow
+			background: yellow
+.site
+	width: 100%
+	position: relative !important
+	overflow: hidden !important
+	&:before
+		background-position: 0 900px
+		width: 100%
+		height: 2300px
+		bottom: 0
+		right: 0
+		background-image: url('#{$imagePath}ondas.jpeg')
+		@media (max-width: $XL)
+			background-image: url('#{$imagePath}ondas.jpeg')
+			bottom: -260px
+		@media (max-width: 950px)
+			background-image: url('#{$imagePath}ondas.jpeg')
+			bottom: -460px
+		+MQMAX(M)
+			width: 118%
+			height: 4810px
+			right: -3px
+			bottom: -1857px
+			background-image: url('#{$imagePath}movil-ondas.jpeg')
+		+MQMAX(S)
+			width: 104%
+			height: 3024px
+			right: -4px
+			bottom: -160px
+			background-image: url('#{$imagePath}movil-ondas.jpeg')
